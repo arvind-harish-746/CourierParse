@@ -25,4 +25,9 @@ public class ParcelService {
     public Collection<Parcel> listAllParcels() {
         return parcels.values();
     }
+
+    // Used when a parcel is cancelled
+    public void removeParcel(String parcelId) {
+        parcels.remove(parcelId);
+    }
 }

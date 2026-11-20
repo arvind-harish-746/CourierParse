@@ -34,5 +34,6 @@ public class BookingService {
         }
         agentService.releaseAgent(parcel.getAssignedAgentId());
         System.out.println("Parcel " + parcelId + " has been cancelled");
+        parcelService.removeParcel(parcelId);
     }
 }
